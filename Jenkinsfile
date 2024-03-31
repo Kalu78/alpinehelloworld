@@ -79,7 +79,7 @@ pipeline {
           script {
             sh '''
               whoami
-              npm i heroku
+              npm i -g heroku
               heroku container:login
               heroku create $STAGING || echo "project already exist"
               heroku container:push -a $STAGING web
