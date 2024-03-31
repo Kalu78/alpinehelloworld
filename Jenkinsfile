@@ -78,6 +78,7 @@ pipeline {
       steps {
           script {
             sh '''
+              whoami
               npm i -g heroku@7.68.0
               heroku container:login
               heroku create $STAGING || echo "project already exist"
