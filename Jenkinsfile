@@ -4,8 +4,8 @@ pipeline {
        IMAGE_NAME = "alpinehelloworld"
        IMAGE_TAG = "latest"
 //       PORT_EXPOSED = "80" à paraméter dans le job
-       STAGING = "${ID_DOCKER}-staging"
-       PRODUCTION = "${ID_DOCKER}-production"
+       STAGING = "kalu78-staging-6a1ea800a95f"
+       PRODUCTION = "kalu78-production-6a1ea800a95f"
      }
      agent none
      stages {
