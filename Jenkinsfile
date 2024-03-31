@@ -79,8 +79,6 @@ pipeline {
           script {
             sh '''
               whoami
-              npm config set prefix /home/luka/.npm-global
-              npm config get prefix
               npm i -g heroku@7.68.0
               heroku container:login
               heroku create $STAGING || echo "project already exist"
